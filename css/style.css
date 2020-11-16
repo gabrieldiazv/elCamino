@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500;900&display=swap');
+
+
+:root{
+    --FuentePrincipal:'Noto Serif', serif;
+    --FuenteSecundaria: 'Noto Serif SC', serif;
+    --colorNegro: #191716;
+    --colorBlanco: #ffff;
+    --colorPlomo: #E8E8E8;
+
+}
+
+body{
+    background-color: var(--colorBlanco);
+    font-family: var(--FuentePrincipal);
+}
+
+
+.header{
+    background-color: var(--colorBlanco);
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.header__contenedor{
+    height: 70px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--colorNegro);
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.header__menu{
+    display: none;
+}
+
+.header__menu a i{
+    font-size: 40px;
+}
+
+.espacio{
+    height: 1000px;
+}
+
+.header__menu-barra a i{
+    font-size: 40px;
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .header__menu{
+        display: block;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+}
+
+
