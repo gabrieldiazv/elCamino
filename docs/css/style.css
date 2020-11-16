@@ -50,6 +50,10 @@ body{
     margin-left: 10px;
 }
 
+.header__logo img{
+    height: 70px;
+}
+
 .header__menu{
     display: none;
 }
