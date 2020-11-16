@@ -148,6 +148,7 @@ body{
 }
 .inicio__nosotros-titulo h1{
     font-family: 'Great Vibes', cursive;
+    text-shadow: 3px 2px var(--colorBlanco);
 }
 
 
@@ -197,9 +198,13 @@ body{
 }
 
 @media only screen and (max-width: 500px){
-    .inicio__nosotros-titulo{
+    .inicio__nosotros-titulo {
         font-size: 30px;
+        color: #fff;
+        text-shadow: 1px 2px var(--colorNegro);
     }
+
+
 
     
 }
