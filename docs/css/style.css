@@ -52,6 +52,7 @@ body{
 
 .header__logo img{
     height: 70px;
+    width: auto;
 }
 
 .header__menu{
