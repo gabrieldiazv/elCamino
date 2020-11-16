@@ -198,8 +198,8 @@ body{
 }
 
 @media only screen and (max-width: 500px){
-    .inicio__nosotros-titulo {
-        font-size: 30px;
+    .inicio__nosotros-titulo h1{
+        font-size: 70px;
         color: #fff;
         text-shadow: 1px 2px var(--colorNegro);
     }
