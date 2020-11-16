@@ -8,4 +8,5 @@
 //open a pushbar
 pushbar.open('mypushbar1');	
 //close all pushbars
-pushbar.close();       
+pushbar.close('cerrar');       
+

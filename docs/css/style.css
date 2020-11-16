@@ -17,6 +17,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--colorBlanco);
     font-family: var(--FuentePrincipal);
@@ -30,15 +34,17 @@ body{
     top: 0;
 }
 
-.header__contenedor{
+.contenedor{
     height: 70px;
     width: 90%;
     max-width: 1100px;
     margin: auto;
+}
+
+.header__contenedor{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header__nav a {
