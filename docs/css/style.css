@@ -50,9 +50,13 @@ body{
     margin-left: 10px;
 }
 
+.header__logo{
+    background-color: red;
+    height: 70px;
+}
 .header__logo img{
     height: 70px;
-    width: auto;
+    width: auto ;
 }
 
 .header__menu{
