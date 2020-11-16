@@ -4,9 +4,7 @@
     box-sizing: 0;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root{
     --FuentePrincipal:'Roboto', sans-serif;
@@ -24,6 +22,7 @@ html{
 body{
     background-color: var(--colorBlanco);
     font-family: var(--FuentePrincipal);
+    
 }
 
 
@@ -32,6 +31,7 @@ body{
     height: 70px;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .contenedor{
@@ -99,7 +99,81 @@ body{
     font-size: 25px;
 }
 
-@media only screen and (max-width: 768px){
+/* Portada */
+
+.inicio__nosotros{
+    display: flex;
+    height: 600px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio__nosotros-img img{
+    width: 100%;
+    height: 250px;
+}
+
+.inicio{
+    height: 800px;
+    background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+    
+
+.wave{
+    
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+
+.inicio__nosotros-titulo{
+    
+    margin-top: 150px;
+    height: 400px;
+    display: inline-block;
+    width: 100%;
+    font-size: 40px;
+    /* background-color: red; */
+    text-align: center;
+    z-index: 10;
+    
+
+}
+.inicio__nosotros-titulo h1{
+    font-family: 'Great Vibes', cursive;
+}
+
+
+
+.boton__inicio{
+    display: block;
+    font-family: var(--FuentePrincipal);
+    font-size: 30px;
+    text-decoration: none;
+    
+    padding: 25px 30px;
+    width: 120px;
+    border-radius: 50px;
+    margin: 30px auto; 
+    color: #8666B1;
+    background-color: #fff;
+    
+}
+
+.boton__inicio:hover{
+    background-color: #8666B1;
+    color: #fff;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 992px){
 
     .header__menu{
         display: block;
@@ -109,6 +183,25 @@ body{
         display: none;
     }
 
+    .inicio__nosotros{
+        
+        flex-direction: column;
+    }
+
+    .inicio__nosotros-titulo{
+        margin-top: 30px;
+    }
+        
+    
+
+}
+
+@media only screen and (max-width: 500px){
+    .inicio__nosotros-titulo{
+        font-size: 30px;
+    }
+
+    
 }
 
 
